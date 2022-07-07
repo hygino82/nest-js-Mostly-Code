@@ -4,7 +4,11 @@ import { v4 as uuidv4 } from "uuid";
 
 @Injectable()
 export class UsersService {
-    private users: User[] = [];
+    private users: User[] = [
+        new User(uuidv4(), "Gorete medeiros", 54, "goretinha", "goretinha@gmail.com"),
+        new User(uuidv4(), "Godofredo Silva", 37, "godolegal", "godofredo@gmail.com"),
+        new User(uuidv4(), "Juvenal Tenório", 25, "juve", "juvenal@gmail.com")
+    ];
 
     insertUser(name: string, age: number, surname: string, email: string) {
         const id = uuidv4();

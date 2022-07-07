@@ -5,10 +5,10 @@ import { UsersService } from "./users.service";
 export class UserController {
     constructor(private readonly userService: UsersService) { }
 
-    @Get()
-    getUsers() {
-        return 'Hello';
-    }
+    // @Get()
+    // getUsers() {
+    //     return 'Hello';
+    // }
 
     @Post()
     insertUser(
